@@ -62,13 +62,9 @@ function nextPerfil(){
 
 function beforePerfil (){
     if (choice === 0){
-        choice = 2
+        choice = candidatos.length - 1
     } else {
         choice--
     }
     changePerfil(choice)
 }
-
-
-
-

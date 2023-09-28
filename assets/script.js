@@ -22,6 +22,14 @@ const candidatos= [
         birth: "03/01/1993",
         phone: "(21)99942-3087",
         email: "fertorres@hotmail.com",
+    },
+    {
+        image: "https://media.licdn.com/dms/image/D4D03AQEKfaNO67b54w/profile-displayphoto-shrink_400_400/0/1693483412212?e=1700697600&v=beta&t=7gQX108OCp7zLuMJA3HuvUMskQz6-qwZgiOjsyNwM9E",
+        name: "Larissa Silva",
+        profession: "Psicóloga",
+        birth: "29/04/1995",
+        phone: "(27)996734133",
+        email: "psicologa.larissa@gmail.com",
     }
 ];
 
@@ -54,13 +62,9 @@ function nextPerfil(){
 
 function beforePerfil (){
     if (choice === 0){
-        choice = 2
+        choice = candidatos.length - 1
     } else {
         choice--
     }
     changePerfil(choice)
 }
-
-
-
-

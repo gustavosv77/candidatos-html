@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -5,18 +6,18 @@
 }
 
 body {
-    width: 100vw;
+    width: 100vw;               /*deixa o tamanho do site proporcional a tela verticalmente e horizontalmente*/
     height: 100vh;
 }
 
 header {
     width: 100%;
     height: 10%;
-    box-shadow: 2px #b5addb4d;       /*border-bottom: 1px solid black;*/
+    box-shadow: 2px #b5addb4d;       
     display: flex;
     align-items: center;        /*centraliza verticalmente*/
     justify-content: center;        /*centraliza horizontalmente*/
-    background-color:#ffe3dc9d ; 
+    background-color:rgba(255, 255, 255, 0.767) ; 
 }
 
 main {
@@ -25,11 +26,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#e0e1e9; 
+    background-color:#bfc4da; 
 
 }
 
-section {
+#card {
     background-color: white;
     border-radius: 10px;
     padding: 20px;
@@ -42,8 +43,8 @@ section {
 }
 
 img {
-    width: 350px;           /* width: 100%; */
-    height: 350px;          
+    width: 300px;           
+    height: 300px;          
     object-fit: fill;
     border-radius: 10px;                    
 }
@@ -59,10 +60,12 @@ img {
 }
 
 p {
-    font-weight: 800;
+    font-size: larger;
+    font-weight: 600;
 }
 
 span {
+    font-size: large;
     font-weight: 400;
 }
 
@@ -100,8 +103,8 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #ffe3dc9d;
-        box-shadow: 3px 3px 3px 3px #b5addb4d;  
+        background-color: rgba(255, 255, 255, 0.76);
+        box-shadow: 3px 3px 3px 3px #b5addb4d ; 
         
 }
 
@@ -110,3 +113,53 @@ x {
     font-size: large;
 }
 
+/* inicio modal */
+
+#header-modal {     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.178);
+    padding: 10px;
+    border-radius: 10px 10px 0 0; 
+    width: 350px;
+}
+
+#main-modal > form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    background-color: rgba(128, 0, 128, 0.384);
+}
+
+fieldset {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    padding: 8px;
+    border: none
+      
+}
+
+#input-date{
+    width: 169px;
+}
+
+#main-modal > form > button {
+    align-self: center;
+    margin-top: 40px;
+}
+
+label{
+    color: black;
+    font-size: large;
+}
+
+
+/* final modal */

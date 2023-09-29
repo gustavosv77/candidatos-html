@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,7 +13,7 @@
     </header>
 
     <main>
-        <section>
+        <section id="card">
             <div id="div-img">
                 <img src="https://media.licdn.com/dms/image/D4D03AQEKfaNO67b54w/profile-displayphoto-shrink_400_400/0/1693483412212?e=1700697600&v=beta&t=7gQX108OCp7zLuMJA3HuvUMskQz6-qwZgiOjsyNwM9E" alt="">
             </div>
@@ -32,6 +33,52 @@
             </div>
 
         </section>
+
+    </section>
+
+    <section id="modal">
+        <div id="header-modal">
+            <h2>Adicionar Novo Candidato</h2>
+            <a>&#10060</a>
+        </div>
+        
+        <div id="main-modal">
+        <form action="submit">
+            <fieldset>
+                <label for="link">Link da imagem</label>
+                <input type="link">
+            </fieldset>
+
+            <fieldset>
+                <label for="text">Nome</label>
+                <input type="text">
+            </fieldset>
+
+            <fieldset>
+                <label for="text">Profissão</label>
+                <input type="text">
+            </fieldset>
+
+            <fieldset>
+                <label for="date">Nascimento</label>
+                <input type="date">
+            </fieldset>
+
+            <fieldset>
+                <label for="tel">Telefone</label>
+                <input type="tel">
+            </fieldset>
+
+            <fieldset>
+                <label for="email">E-mail</label>
+                <input type="email">
+            </fieldset>     
+            
+            <button>Enviar</button>
+        </form>
+        </div>
+</section>
+
     </main>
 
     <footer>

@@ -43,8 +43,8 @@ main {
 }
 
 img {
-    width: 350px;           
-    height: 350px;          
+    width: 300px;           
+    height: 300px;          
     object-fit: fill;
     border-radius: 10px;                    
 }
@@ -110,3 +110,31 @@ x {
     font-style:normal;
     font-size: large;
 }
+
+/* inicio modal */
+
+#header-modal {     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(128, 128, 128, 0.178);
+    padding: 10px;
+    border-radius: 10px 10px 0 0; 
+    width: 350px;
+}
+
+#main-modal > form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+#main-modal > form > button {
+    align-self: center;
+}
+
+
+
+/* final modal */

@@ -60,10 +60,12 @@ img {
 }
 
 p {
+    font-size: larger;
     font-weight: 800;
 }
 
 span {
+    font-size: large;
     font-weight: 400;
 }
 

@@ -28,56 +28,55 @@
 
             <div id="buttons">
                 <button onclick="beforePerfil()"><</button>
-                <button>+</button>
+                <button onclick="openModal()">+</button>
                 <button onclick="nextPerfil()">></button>
             </div>
-
         </section>
-
-    </section>
 
     <section id="modal">
         <div id="header-modal">
             <h2>Adicionar Novo Candidato</h2>
-            <a>&#10060</a>
+            <a onclick="closeModal()">&#10060</a>
         </div>
         
         <div id="main-modal">
-        <form action="submit">
-            <fieldset>
-                <label for="link">Link da imagem</label>
-                <input type="link">
-            </fieldset>
+        <form>
+                    <fieldset>
+                        <label for="link">Link da imagem</label>
+                        <input type="link">
+                    </fieldset>
 
-            <fieldset>
-                <label for="text">Nome</label>
-                <input type="text">
-            </fieldset>
+                    <fieldset>
+                        <label for="text">Nome</label>
+                        <input type="text">
+                    </fieldset>
 
-            <fieldset>
-                <label for="text">Profissão</label>
-                <input type="text">
-            </fieldset>
+                    <fieldset>
+                        <label for="text">Profissão</label>
+                        <input type="text">
+                    </fieldset>
 
-            <fieldset>
-                <label for="date">Nascimento</label>
-                <input type="date">
-            </fieldset>
+                    <fieldset>
+                        <label for="date">Nascimento</label>
+                        <input type="date" id="input-date">
+                    </fieldset>
 
-            <fieldset>
-                <label for="tel">Telefone</label>
-                <input type="tel">
-            </fieldset>
+                    <fieldset>
+                        <label for="tel">Telefone</label>
+                        <input type="tel">
+                    </fieldset>
 
-            <fieldset>
-                <label for="email">E-mail</label>
-                <input type="email">
-            </fieldset>     
+                    <fieldset>
+                        <label for="email">E-mail</label>
+                        <input type="email">
+                    </fieldset>     
             
-            <button>Enviar</button>
-        </form>
-        </div>
-</section>
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <div id="overflow"></div>
 
     </main>
 
@@ -86,5 +85,7 @@
     </footer>
 
 </body>
+
 <script src="./assets/script.js"></script>
+
 </html>

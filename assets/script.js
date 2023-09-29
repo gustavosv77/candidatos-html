@@ -33,12 +33,15 @@ const candidatos= [
     }
 ];
 
-const image = document.querySelector("img")
-const nome = document.querySelector("#nome")
-const profissao = document.querySelector("#profissao")
-const nascimento = document.querySelector("#nascimento")
-const telefone = document.querySelector("#telefone")
-const email = document.querySelector("#email")
+const image = document.querySelector("img");
+const nome = document.querySelector("#nome");
+const profissao = document.querySelector("#profissao");
+const nascimento = document.querySelector("#nascimento");
+const telefone = document.querySelector("#telefone");
+const email = document.querySelector("#email");
+
+const modalNewCandidato = document.querySelector('#modal');
+const overFlow = document.querySelector('#overFlow');
 
 let choice = 0
 
@@ -67,4 +70,14 @@ function beforePerfil (){
         choice--
     }
     changePerfil(choice)
+}
+
+function closeModal() {
+    modalNewCandidato.style.display = "none";
+    overFlow.style.display = "none";
+}
+
+function openModal() {
+    modalNewCandidato.style.display = "block";
+    overFlow.style.display = "block";
 }

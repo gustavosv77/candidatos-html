@@ -5,7 +5,7 @@ const candidatos= [
         profession: "Engenheiro Civil",
         birth: "15/06/1988",
         phone: "(28)99451-3892",
-        email: "alexsantos@gmail.com",
+        email: "alexsantos@hotmail.com",
     },
     {
         image: "https://jazevedo.net/wp-content/uploads/2018/04/Fotografia-LinkedIn-Headshot-Coimbra-Joao-Azevedo-0444.jpg",
@@ -42,6 +42,13 @@ const email = document.querySelector("#email");
 
 const modalNewCandidato = document.querySelector('#modal');
 const overFlow = document.querySelector('#overFlow');
+
+const inputImage = document.querySelector('#input-link');
+const inputName = document.querySelector('#input-name');
+const inputProfission = document.querySelector('#input-profission');
+const inputNasc = document.querySelector('#input-nasc');
+const inputTel = document.querySelector('#input-tel');
+const inputEmail = document.querySelector('#input-email');
 
 let choice = 0
 
@@ -81,3 +88,19 @@ function openModal() {
     modalNewCandidato.style.display = "block";
     overFlow.style.display = "block";
 }
+
+function addNewCandidato () {
+    const newCandidato = {
+    image: inputImage.value,
+    name: inputName.value,
+    profession: inputProfission.value ,
+    birth: inputNasc.value ,
+    phone: inputTel.value ,
+    email: inputEmail.value
+    };
+
+    candidatos.push(newCandidato); //adiciona um novo objeto ao fim do array candidatos
+
+    closeModal();
+}
+
